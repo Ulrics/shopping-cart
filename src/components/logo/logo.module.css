@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 
 .large{
-    font-family: 'Inter Tight';
-
+    color: #DA229D;
+    font: 500 2.5rem/3.5rem 'Inter Tight';
 }
 
 .medium{
-    font-family: 'Inter Tight';
+    color: #DA229D;
+    font: 500 1.25rem/1.5rem 'Inter Tight';
 }
 
 .small{
-    font-family: 'Inter Tight';
+    color: #DA229D;
+    font: 500 1.25rem/1.5rem 'Inter Tight';
 }

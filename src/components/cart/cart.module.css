@@ -1,0 +1,19 @@
+
+.navcart{
+    padding: 4px;
+    background-color: transparent;
+    border-width: 0px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.navcart:hover{
+    background-color: #edecec;
+}
+
+.quantity{
+    font: 500 1rem/1.5rem 'Albert Sans';
+    color: #777777;
+}

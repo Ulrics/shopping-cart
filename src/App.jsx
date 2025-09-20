@@ -1,14 +1,16 @@
 import { useState } from 'react'
+import { NavBar } from './components/navbar/navbar.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  /*
   fetch('https://fakestoreapi.com/products')
   .then(response => response.json())
   .then(data => console.log(data));
+  */
 
   return (
     <>
+      <NavBar />
       <p>Placeholder Test</p>
     </>
   )

@@ -1,10 +1,11 @@
 
-import styles from "./logo/logo.module.css";
+import styles from "./logo.module.css";
 
-function Logo(size){
+export function Logo({size}){
     return(
-        <div className="">
+        <div className={styles[size]}>
             Fake Store™
         </div>
     )
 }
+
