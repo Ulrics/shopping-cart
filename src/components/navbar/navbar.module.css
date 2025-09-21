@@ -3,6 +3,8 @@ nav{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    box-sizing: border-box;
+    padding: 16px 24px;
 }
 
 .linkcontainer{
@@ -14,11 +16,11 @@ nav{
 .navlink{
     font: 600 1rem/1.5rem 'Albert Sans';
     text-decoration-line: none;
-    color: #000000;
+    color: var(--dark);
     padding: 4px;
     border-radius: 4px;
 }
 
 .navlink:hover{
-    color: #3f3f3f;
+    color: var(--hover-dark);
 }

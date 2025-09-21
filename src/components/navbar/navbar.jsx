@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { Logo } from '../logo/logo.jsx';
+import Logo from '../logo/logo.jsx';
 import { NavCart } from "../cart/cart.jsx";
 import styles from "./navbar.module.css";
 
@@ -8,8 +8,8 @@ export function NavBar(){
         <nav>
             <Logo size={"medium"} />
             <div className={styles.linkcontainer}>
-                <NavLink label={"Home"} linkTo={""}/>
-                <NavLink label={"Shop"} linkTo={"shop"}/>
+                <NavLink label={"Home"} linkTo={"/"}/>
+                <NavLink label={"Shop"} linkTo={"/shop"}/>
                 <NavCart />
             </div>
         </nav>

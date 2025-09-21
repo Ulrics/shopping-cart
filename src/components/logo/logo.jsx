@@ -1,11 +1,12 @@
-
+import { Link } from "react-router";
 import styles from "./logo.module.css";
 
-export function Logo({size}){
+function Logo({size}){
     return(
-        <div className={styles[size]}>
+        <Link className={styles[size]} to={"/"}>
             Fake Store™
-        </div>
+        </Link>
     )
 }
 
+export default Logo;

@@ -3,14 +3,17 @@
 .large{
     color: #DA229D;
     font: 500 2.5rem/3.5rem 'Inter Tight';
+    text-decoration: none;
 }
 
 .medium{
     color: #DA229D;
     font: 500 1.25rem/1.5rem 'Inter Tight';
+    text-decoration: none;
 }
 
 .small{
     color: #DA229D;
     font: 500 1.25rem/1.5rem 'Inter Tight';
+    text-decoration: none;
 }

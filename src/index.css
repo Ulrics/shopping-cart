@@ -9,8 +9,60 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --dark: #000000;
+  --hover-dark: #3f3f3f;
+}
+
+html, body, #root {
+  margin: 0px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  font: 600 2.5rem/3.5rem 'Albert Sans';
+  margin: 0px;
+  text-align: center;
 }
 
 p{
   margin: 0px;
+}
+
+.homepage-container{
+  flex: 1;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.homepage-icon{
+  width: 88px;
+  height: 88px;
+}
+
+.homepage-cta{
+  font: 500 1rem/2rem 'Albert Sans';
+  color: var(--dark);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.homepage-cta:hover{
+  color: var(--hover-dark);
 }
