@@ -11,6 +11,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   --dark: #000000;
+  --light-dark: #777575;
   --hover-dark: #3f3f3f;
 }
 
@@ -36,7 +37,7 @@ h1{
   text-align: center;
 }
 
-p{
+h1, h2, h3, h4, h5, h6, p{
   margin: 0px;
 }
 
@@ -65,4 +66,18 @@ p{
 
 .homepage-cta:hover{
   color: var(--hover-dark);
+}
+
+.shop-container{
+  display: flex;
+  justify-content: center;
+  padding: 48px 32px;
+}
+
+.shop-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  width: 100%;
+  max-width: 1600px;
+  gap: 24px;
 }

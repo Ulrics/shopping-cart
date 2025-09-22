@@ -1,3 +1,30 @@
 .card{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-decoration: none;
+    width: 100%;
+}
 
+.image{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    box-sizing: border-box;
+    object-fit: scale-down;
+    padding: 24px;
+    background-color: #F7F7F7;
+    border-radius: 2px;
+}
+
+.title{
+    color: var(--dark);
+    font: 400 1.25rem/1.75rem 'Albert Sans';
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.price{
+    color: var(--light-dark);
+    font: 400 1rem/1.5rem 'Albert Sans';
 }
