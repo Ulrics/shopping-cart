@@ -1,0 +1,15 @@
+
+.primaryBtn{
+    width: 100%;
+    border-radius: 12px;
+    border: none;
+    padding: 12px;
+    background-color: #454545;
+    color: #FFFFFF;
+    font: 500 1rem/1.5rem 'Albert Sans';
+}
+
+.primaryBtn:hover{
+    background-color: #272626;
+    cursor: pointer;
+}

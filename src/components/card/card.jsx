@@ -8,7 +8,7 @@ const itemLink = item.title
   .replaceAll(" ", "-");
 
     return(
-        <Link to={`/shop/item/${itemLink}`} className={styles.card}>
+        <Link to={`/shop/${itemLink}`} state={item} className={styles.card}>
             <img className={styles.image} src={item.image}/>
             <div>
                 <h4 className={styles.title}>{item.title}</h4>
