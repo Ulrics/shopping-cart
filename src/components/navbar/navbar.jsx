@@ -3,14 +3,14 @@ import Logo from '../logo/logo.jsx';
 import { NavCart } from "../cart/cart.jsx";
 import styles from "./navbar.module.css";
 
-export function NavBar(){
+export function NavBar( {cartAction, cart} ){
     return(
         <nav>
             <Logo size={"medium"} />
             <div className={styles.linkcontainer}>
                 <NavLink label={"Home"} linkTo={"/"}/>
                 <NavLink label={"Shop"} linkTo={"/shop"}/>
-                <NavCart />
+                <NavCart openCart={cartAction} cart={cart}/>
             </div>
         </nav>
     )

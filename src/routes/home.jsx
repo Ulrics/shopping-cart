@@ -6,14 +6,11 @@ import  shopPic from '../assets/shop_pic.png';
 
 export function Homepage() {
     return (
-      <>
-        <NavBar />
-        <div className='homepage-container'>
-          <img src={shopPic} alt="shop icon" className='homepage-icon'/>
-          <h1>Welcome to the <Logo size={'large'}/></h1>
-          <Link to={"shop"} className='homepage-cta'>Browse Shop<ArrowRight color={"#000000"} size={24} strokeWidth={2}/></Link>
-        </div>
-      </>
+      <div className='homepage-container'>
+        <img src={shopPic} alt="shop icon" className='homepage-icon'/>
+        <h1>Welcome to the <Logo size={'large'}/></h1>
+        <Link to={"shop"} className='homepage-cta'>Browse Shop<ArrowRight color={"#000000"} size={24} strokeWidth={2}/></Link>
+      </div>
     )
 }
 

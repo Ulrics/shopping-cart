@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { NavBar } from '../components/navbar/navbar.jsx';
 import Card from "../components/card/card.jsx";
 
 export function ShopPage() {
@@ -24,15 +23,12 @@ export function ShopPage() {
     }, [])
         
     return (
-        <>
-        <NavBar />
         <div className="shop-container">
             <div className="shop-grid">
                 {items.map(item =>
                     <Card item={item} key={item.id}/>)}
             </div>
         </div>
-        </>
     )
 }
 

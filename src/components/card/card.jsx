@@ -2,17 +2,19 @@ import { Link } from 'react-router';
 import styles from './card.module.css';
 
 function Card ({ item }){
-const itemLink = item.title
-  .replaceAll(/['&./()]/g, "")
-  .replaceAll(" - ", "")
-  .replaceAll(" ", "-");
+    const itemLink = item.title
+    .replaceAll(/['&./()]/g, "")
+    .replaceAll(" - ", "")
+    .replaceAll(" ", "-");
+
+    const formattedPrice = item.price.toFixed(2);
 
     return(
         <Link to={`/shop/${itemLink}`} state={item} className={styles.card}>
             <img className={styles.image} src={item.image}/>
             <div>
                 <h4 className={styles.title}>{item.title}</h4>
-                <p className={styles.price}>{item.price} USD</p>
+                <p className={styles.price}>{formattedPrice} USD</p>
             </div>
         </Link>
     )
